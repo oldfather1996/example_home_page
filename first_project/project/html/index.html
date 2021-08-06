@@ -18,31 +18,36 @@
 
 <body>
     <div id="main">
-
         <!-- Begin : Header -->
         <div id="header">
             <div class="container">
-                <div class="container--inner">
-
+                <div class="container--inner row">
                     <div class="container__logo">
                         <img src="../asset/image/header/logo.png" alt="">
                     </div>
-                    <div class="container__nav">
-                        <ul class="container__nav--menu">
-                            <li>Home</li>
-                            <li>Page</li>
-                            <li>Classes</li>
-                            <li>Portolic</li>
-                            <li>Blog</li>
-                            <li>Contacts</li>
+                    <div class="container__nav-left">
+                        <ul class="container__nav--menu-left">
+                            <li><a href="#">Home</a></li>
+                            <li><a href="#">Pages</a></li>
+                            <li><a href="#">Classes</a></li>
+                        </ul>
+
+                    </div>
+                    <div class="container__nav-right">
+                        <ul class="container__nav--menu-right">
+                            <li><a href="#">Portfolio</a></li>
+                            <li><a href="#">Blog</a></li>
+                            <li><a href="#">Contacts</a></li>
                         </ul>
                     </div>
                     <div class="container__icon">
-                        <i class="fas fa-search"></i>
-                        <p>|</p>
-                        <i class="fas fa-shopping-basket"></i>
-                        <p>|</p>
-                        <i class="fas fa-user"></i>
+                        <div class="container__icon--inside">
+                            <a href=""> <i class="fas fa-search"></i></a>
+                            <p>|</p>
+                            <a href=""> <i class="fas fa-shopping-basket"></i></a>
+                            <p>|</p>
+                            <a href=""> <i class="fas fa-user"></i></a>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -51,25 +56,27 @@
 
         <!-- Begin : slider -->
         <div class="slider">
-            <img class="slider--banner" />
-            <div class="slider__image">
-                <img src="../asset/image/slider/woman.png">
-            </div>
+            <div class="slider--banner"></div>
             <div class="container">
-                <div class="container__title_header">
-                    <h1 class="fs-60">Dumbbells Shop</h1>
-                    <h2 class="fs-40">Best body fitness</h2>
-                    <p class="fs-14">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem
-                        Ipsum has been
-                        the industry's standard
-                        dummy text ever since the 1500s, when an unknown printer</p>
-
-                </div>
-                <div class="slider__button">
-                    <a href="#">SHOP NOW</a>
+                <div class="container__inner">
+                    <div class="container__inner--title">
+                        <div class="container__title_header">
+                            <h1 class="fs-60">Dumbbells Shop</h1>
+                        </div>
+                        <div class="container__title_medium">
+                            <h2 class="fs-40">Best body fitness</h2>
+                        </div>
+                        <div class="container__title_desc">
+                            <p class="fs-14">Lorem Ipsum is simply dummy text of the printing and typesetting industry.
+                                Lorem Ipsum has been the industry's standard
+                                dummy text ever since the 1500s, when an unknown printer</p>
+                        </div>
+                    </div>
+                    <div class="slider__button">
+                        <a href="#">SHOP NOW</a>
+                    </div>
                 </div>
             </div>
-
         </div>
         <!-- End : Slider -->
 
@@ -83,8 +90,8 @@
                 </div>
                 <div class="container__banner--inside row-3">
                     <div class="inside">
-                        <img src="../asset/image/category/stregth/icon.png" class="img_icon">
-                        <p class="text-heading">
+                        <img src="../asset/image/category/stregth/icon.png" class="img_icon__strength">
+                        <p class="text-heading__strength">
                             STRENGTH
                         </p>
                         <p class="text-desc">
@@ -97,9 +104,9 @@
                         alt="">
                 </div>
                 <div class="container__banner--inside row-3">
-                    <img src="../asset/image/category/dumbbeils/icon.png" class="img_icon">
-                    <p class="text-heading">
-                        DUMMBELLS
+                    <img src="../asset/image/category/dumbbeils/icon.png" class="img_icon__dummble">
+                    <p class="text-heading__dumbbells">
+                        DUMBBELLS
                     </p>
                     <p class="text-desc">
                         Lorem Ipsum is simply dummy text of the printing and typesetting industry.
@@ -110,8 +117,8 @@
                         alt="">
                 </div>
                 <div class="container__banner--inside row-3">
-                    <img src="../asset/image/category/power-rack/icon.png" class="img_icon">
-                    <p class="text-heading">
+                    <img src="../asset/image/category/power-rack/icon.png" class="img_icon__power-rack">
+                    <p class="text-heading__power-rack">
                         POWER RACK & CAGES
                     </p>
                     <p class="text-desc">
@@ -119,14 +126,6 @@
                     </p>
                 </div>
             </div>
-            <!-- <div class="container__banner col-third">
-                
-                
-            </div>
-            <div class="container__banner col-third">
-                
-             
-            </div> -->
         </div>
 
 
@@ -144,124 +143,139 @@
                 <div class="product__items row">
                     <div class="col-fourth">
                         <div class="product__item--info">
-                            <img src="../asset/image/product/product_1.jpg">
+                            <div class="item--img">
+                                <img src="../asset/image/product/product_1.png">
+                            </div>
                             <div class="item--text">
-                                <p class="item--name">AFG Pro 7.2AI Incline</p>
-                                <p class="item--price">$252.00</p>
+                                <p class="item--name">Body Champ Cardio</p>
+                                <p class="item--price">$342.00</p>
                             </div>
                             <div class="item--icon">
-                                <i class="fas fa-shopping-basket"></i>
-                                <i class="fas fa-eye"></i>
-                                <i class="fas fa-heart"></i>
-                                <i class="fas fa-exchange-alt"></i>
+                                <a href="#"><i class="fas fa-shopping-basket"></i></a>
+                                <a href="#"><i class="fas fa-eye"></i></a>
+                                <a href="#"><i class="fas fa-heart"></i></a>
+                                <a href="#"><i class="fas fa-exchange-alt"></i></a>
                             </div>
                         </div>
                     </div>
-
                     <div class="col-fourth">
-                        <div class="product__item--info ">
-                            <img src="../asset/image/product/product_2.jpg">
+                        <div class="product__item--info">
+                            <div class="item--img">
+                                <img src="../asset/image/product/product_2.png">
+                            </div>
                             <div class="item--text">
                                 <p class="item--name">Body Solic GCEC340</p>
                                 <p class="item--price">$214.00</p>
                             </div>
                             <div class="item--icon">
-                                <i class="fas fa-shopping-basket"></i>
-                                <i class="fas fa-eye"></i>
-                                <i class="fas fa-heart"></i>
-                                <i class="fas fa-exchange-alt"></i>
+                                <a><i class="fas fa-shopping-basket"></i></a>
+                                <a><i class="fas fa-eye"></i></a>
+                                <a><i class="fas fa-heart"></i></a>
+                                <a><i class="fas fa-exchange-alt"></i></a>
                             </div>
                         </div>
                     </div>
                     <div class="col-fourth">
-                        <div class="product__item--info ">
-                            <img src="../asset/image/product/product_3.jpg">
+                        <div class="product__item--info">
+                            <div class="item--img">
+                                <img src="../asset/image/product/product_3.png">
+                            </div>
                             <div class="item--text">
                                 <p class="item--name">Bowflex BXE116 Elliptical</p>
                                 <p class="item--price">$421.00</p>
                             </div>
                             <div class="item--icon">
-                                <i class="fas fa-shopping-basket"></i>
-                                <i class="fas fa-eye"></i>
-                                <i class="fas fa-heart"></i>
-                                <i class="fas fa-exchange-alt"></i>
+                                <a><i class="fas fa-shopping-basket"></i></a>
+                                <a><i class="fas fa-eye"></i></a>
+                                <a><i class="fas fa-heart"></i></a>
+                                <a><i class="fas fa-exchange-alt"></i></a>
                             </div>
                         </div>
                     </div>
                     <div class="col-fourth">
                         <div class="product__item--info">
-                            <img src="../asset/image/product/product_4.jpg">
+                            <div class="item--img">
+                                <img src="../asset/image/product/product_4.png">
+                            </div>
                             <div class="item--text">
                                 <p class="item--name">ETHOS GHD</p>
                                 <p class="item--price">$152.00</p>
                             </div>
                             <div class="item--icon">
-                                <i class="fas fa-shopping-basket"></i>
-                                <i class="fas fa-eye"></i>
-                                <i class="fas fa-heart"></i>
-                                <i class="fas fa-exchange-alt"></i>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-fourth">
-                        <div class="product__item--info ">
-                            <img src="../asset/image/product/product_5.jpg">
-                            <div class="item--text">
-                                <p class="item--name">AFG Pro 7.2 AI Incline</p>
-                                <p class="item--price">$252.00</p>
-                            </div>
-                            <div class="item--icon">
-                                <i class="fas fa-shopping-basket"></i>
-                                <i class="fas fa-eye"></i>
-                                <i class="fas fa-heart"></i>
-                                <i class="fas fa-exchange-alt"></i>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-fourth">
-
-                        <div class="product__item--info ">
-                            <img src="../asset/image/product/product_6.jpg">
-                            <div class="item--text">
-                                <p class="item--name">Weight Bench</p>
-                                <p class="item--price">$412.00</p>
-                            </div>
-                            <div class="item--icon">
-                                <i class="fas fa-shopping-basket"></i>
-                                <i class="fas fa-eye"></i>
-                                <i class="fas fa-heart"></i>
-                                <i class="fas fa-exchange-alt"></i>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-fourth">
-
-                        <div class="product__item--info ">
-                            <img src="../asset/image/product/product_7.jpg">
-                            <div class="item--text">
-                                <p class="item--name">ProForm Hiit Trainer Lite 5.9</p>
-                                <p class="item--price">$300.00</p>
-                            </div>
-                            <div class="item--icon">
-                                <i class="fas fa-shopping-basket"></i>
-                                <i class="fas fa-eye"></i>
-                                <i class="fas fa-heart"></i>
-                                <i class="fas fa-exchange-alt"></i>
+                                <a><i class="fas fa-shopping-basket"></i></a>
+                                <a><i class="fas fa-eye"></i></a>
+                                <a><i class="fas fa-heart"></i></a>
+                                <a><i class="fas fa-exchange-alt"></i></a>
                             </div>
                         </div>
                     </div>
                     <div class="col-fourth">
                         <div class="product__item--info">
-                            <img src="../asset/image/product/product_8.jpg">
+                            <div class="item--img">
+                                <img src="../asset/image/product/product_5.png">
+                            </div>
+                            <div class="item--text">
+                                <p class="item--name">AFG Pro 7.2AI Incline</p>
+                                <p class="item--price">$252.00</p>
+                            </div>
+                            <div class="item--icon">
+                                <a><i class="fas fa-shopping-basket"></i></a>
+                                <a><i class="fas fa-eye"></i></a>
+                                <a><i class="fas fa-heart"></i></a>
+                                <a><i class="fas fa-exchange-alt"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-fourth">
+
+                        <div class="product__item--info">
+                            <div class="item--img">
+                                <img src="../asset/image/product/product_6.png">
+                            </div>
+                            <div class="item--text">
+                                <p class="item--name">Weight Bench</p>
+                                <p class="item--price">$412.00</p>
+                            </div>
+                            <div class="item--icon">
+                                <a><i class="fas fa-shopping-basket"></i></a>
+                                <a><i class="fas fa-eye"></i></a>
+                                <a><i class="fas fa-heart"></i></a>
+                                <a><i class="fas fa-exchange-alt"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-fourth">
+
+                        <div class="product__item--info">
+                            <div class="item--img">
+                                <img src="../asset/image/product/product_7.png">
+                            </div>
+                            <div class="item--text">
+                                <p class="item--name">ProForm Hiit Trainer Lite 5.9</p>
+                                <p class="item--price">$300.00</p>
+                            </div>
+                            <div class="item--icon">
+                                <a><i class="fas fa-shopping-basket"></i></a>
+                                <a><i class="fas fa-eye"></i></a>
+                                <a><i class="fas fa-heart"></i></a>
+                                <a><i class="fas fa-exchange-alt"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-fourth">
+                        <div class="product__item--info">
+                            <div class="item--img">
+                                <img src="../asset/image/product/product_8.png">
+                            </div>
                             <div class="item--text">
                                 <p class="item--name">Fitness Gear Pro</p>
                                 <p class="item--price">$124.00</p>
                             </div>
                             <div class="item--icon">
-                                <i class="fas fa-shopping-basket"></i>
-                                <i class="fas fa-eye"></i>
-                                <i class="fas fa-heart"></i>
-                                <i class="fas fa-exchange-alt"></i>
+                                <a><i class="fas fa-shopping-basket"></i></a>
+                                <a><i class="fas fa-eye"></i></a>
+                                <a><i class="fas fa-heart"></i></a>
+                                <a><i class="fas fa-exchange-alt"></i></a>
                             </div>
                         </div>
                     </div>
@@ -274,39 +288,39 @@
         <!-- Start : Slider_About -->
 
         <div class="container">
-            <div class="slider_about">
-                <div class="slider_about__item">
-                    <p class="slider_about__text-heading">See What They Said About Us </p>
-                    <img src="../asset/image/slider_about/image_1.png" class="slider_about__img">
-                    <p class="slider_about__text-desc">"good services.Ibought a bicycle with a wrong but they accepted
-                        free
-                        return for me and exchange a new
-                        product for me"</p>
-                    <p class="slider_about__text-name">LINA</p>
-                    <p class="slider_about__text-wish">Happy clients</p>
-                </div>
-                <div class="slider_about__item">
-                    <p class="slider_about__text-heading">See What They Said About Us </p>
-                    <img src="../asset/image/slider_about/image_1.png" class="slider_about__img">
-                    <p class="slider_about__text-desc">"good services.Ibought a bicycle with a wrong but they accepted
-                        free
-                        return for me and exchange a new
-                        product for me"</p>
-                    <p class="slider_about__text-name">LINA</p>
-                    <p class="slider_about__text-wish">Happy clients</p>
-                </div>
-                <div class="slider_about__item">
-                    <p class="slider_about__text-heading">See What They Said About Us </p>
-                    <img src="../asset/image/slider_about/image_1.png" class="slider_about__img">
-                    <p class="slider_about__text-desc">"good services.Ibought a bicycle with a wrong but they accepted
-                        free
-                        return for me and exchange a new
-                        product for me"</p>
-                    <p class="slider_about__text-name">LINA</p>
-                    <p class="slider_about__text-wish">Happy clients</p>
+            <div class="container__border">
+                <div class="row">
+                    <div class="slider_about">
+                        <div class="slider_about__item">
+                            <p class="slider_about__text-heading">See What They Said About Us </p>
+                            <img src="../asset/image/slider_about/image_1.png" class="slider_about__img">
+                            <p class="slider_about__text-desc">“Good services. I bought a bicycle with a wrong but they
+                                accepted
+                                free return for me and exchange a new product for me.</p>
+                            <p class="slider_about__text-name">LINA</p>
+                            <p class="slider_about__text-wish">Happy clients</p>
+                        </div>
+                        <div class="slider_about__item">
+                            <p class="slider_about__text-heading">See What They Said About Us </p>
+                            <img src="../asset/image/slider_about/image_1.png" class="slider_about__img">
+                            <p class="slider_about__text-desc">“Good services. I bought a bicycle with a wrong but they
+                                accepted
+                                free return for me and exchange a new product for me.</p>
+                            <p class="slider_about__text-name">LINA</p>
+                            <p class="slider_about__text-wish">Happy clients</p>
+                        </div>
+                        <div class="slider_about__item">
+                            <p class="slider_about__text-heading">See What They Said About Us </p>
+                            <img src="../asset/image/slider_about/image_1.png" class="slider_about__img">
+                            <p class="slider_about__text-desc">“Good services. I bought a bicycle with a wrong but they
+                                accepted
+                                free return for me and exchange a new product for me.</p>
+                            <p class="slider_about__text-name">LINA</p>
+                            <p class="slider_about__text-wish">Happy clients</p>
+                        </div>
+                    </div>
                 </div>
             </div>
-
         </div>
 
         <!-- End : Slider_About -->
@@ -314,35 +328,35 @@
         <!-- Start : Brand -->
         <div class="container">
             <div class="container__brand">
-                <div class="brand">
-                    <div class="brand__items">
+                <div class="row">
+                    <div class="col-sixth">
                         <div class="item--inner">
                             <img src="../asset/image/brand/brand_1.png" alt="">
                         </div>
                     </div>
-                    <div class="brand__items">
+                    <div class="col-sixth">
                         <div class="item--inner">
                             <img src="../asset/image/brand/brand_2.png" alt="">
                         </div>
                     </div>
-                    <div class="brand__items">
+                    <div class="col-sixth">
                         <div class="item--inner">
-                            <img src="../asset/image/brand/brand_6.png" alt="">
+                            <img src="../asset/image/brand/brand_3.png" alt="">
                         </div>
                     </div>
-                    <div class="brand__items">
+                    <div class="col-sixth">
+                        <div class="item--inner">
+                            <img src="../asset/image/brand/brand_4.png" alt="">
+                        </div>
+                    </div>
+                    <div class="col-sixth">
                         <div class="item--inner">
                             <img src="../asset/image/brand/brand_5.png" alt="">
                         </div>
                     </div>
-                    <div class="brand__items">
+                    <div class="col-sixth">
                         <div class="item--inner">
                             <img src="../asset/image/brand/brand_6.png" alt="">
-                        </div>
-                    </div>
-                    <div class="brand__items">
-                        <div class="item--inner">
-                            <img src="../asset/image/brand/brand_4.png" alt="">
                         </div>
                     </div>
                 </div>
@@ -357,31 +371,43 @@
                         typesetting industry. Lorem Ipsum has been
                         the industry's standard
                         dummy text ever since the 1500s, when an unknown printer took a galley of type</p>
-                    <i class="footer__header--icon fab fa-facebook-f"></i>
-                    <i class="footer__header--icon fab fa-twitter"></i>
-                    <i class="footer__header--icon fab fa-google-plus-g"></i>
-                    <i class="footer__header--icon fab fa-youtube"></i>
+                    <div class="footer__header--outside">
+                        <a href="#"> <i class="footer__header--icon fab fa-facebook-f"></i></a>
+                        <a href="#"><i class="footer__header--icon fab fa-twitter"></i></a>
+                        <a href="#"><i class="footer__header--icon fab fa-google-plus-g"></i></a>
+                        <a href="#"><i class="footer__header--icon fab fa-youtube"></i></a>
+                    </div>
                 </div>
             </div>
             <div class="container">
-                <div class="footer__bottom row">
+                <div class="row">
+                    <div class="footer__bottom"></div>
                     <div class="col-fourth">
                         <div class="col-inner">
-                            <p class="footer__bottom--header-text">
-                                CONTACT US
-                            </p>
-                            <p class="footer__bottom--info-text"><i
-                                    class="footer__bootom--icon fas fa-map-marker-alt"></i>200
-                                Lincoln Ave, Salinas, CA
-                                93901</p>
-                            <p class="footer__bottom--info-text"><i
-                                    class="footer__bootom--icon fas fa-map-marker-alt"></i>023
-                                32423 223</p>
-                            <p class="footer__bottom--info-text"><i
-                                    class="footer__bootom--icon fas fa-map-marker-alt"></i>gymax@example.com</p>
-                            <p class="footer__bottom--info-text"><i
-                                    class="footer__bootom--icon fas fa-map-marker-alt"></i>9:00
-                                - 20:00 All day</p>
+                            <a href="#">
+                                <p class="footer__bottom--header-text">
+                                    CONTACT US
+                                </p>
+                                <a href="#">
+                                    <p class="footer__bottom--info-text"><i
+                                            class="footer__bootom--icon fas fa-map-marker-alt"></i>200
+                                        Lincoln Ave, Salinas, CA
+                                        93901</p>
+                                </a>
+                                <a href="#">
+                                    <p class="footer__bottom--info-text"><i
+                                            class="footer__bootom--icon fas fas fa-phone"></i>023
+                                        32423 223</p>
+                                </a>
+                                <a href="#">
+                                    <p class="footer__bottom--info-text"><i
+                                            class="footer__bootom--icon fas fa-envelope"></i>gymax@example.com</p>
+                                </a>
+                                <a href="#">
+                                    <p class="footer__bottom--info-text"><i
+                                            class="footer__bootom--icon fas fa-clock"></i>9:00
+                                        - 20:00 All day</p>
+                                </a>
                         </div>
                     </div>
                     <div class="col-fourth">
@@ -389,18 +415,26 @@
                             <p class="footer__bottom--header-text">
                                 MY ACCOUNT
                             </p>
-                            <p class="footer__bottom--info-text">
-                                My acoount
-                            </p>
-                            <p class="footer__bottom--info-text">
-                                Check out
-                            </p>
-                            <p class="footer__bottom--info-text">
-                                Register
-                            </p>
-                            <p class="footer__bottom--info-text">
-                                Login
-                            </p>
+                            <a href="#">
+                                <p class="footer__bottom--info-text">
+                                    My acoount
+                                </p>
+                            </a>
+                            <a href="#">
+                                <p class="footer__bottom--info-text">
+                                    Check out
+                                </p>
+                            </a>
+                            <a href="#">
+                                <p class="footer__bottom--info-text">
+                                    register
+                                </p>
+                            </a>
+                            <a href="#">
+                                <p class="footer__bottom--info-text">
+                                    Login
+                                </p>
+                            </a>
                         </div>
                     </div>
                     <div class="col-fourth">
@@ -408,18 +442,26 @@
                             <p class="footer__bottom--header-text">
                                 INFORMATION
                             </p>
-                            <p class="footer__bottom--info-text">
-                                About us
-                            </p>
-                            <p class="footer__bottom--info-text">
-                                Contact us
-                            </p>
-                            <p class="footer__bottom--info-text">
-                                Terms of user
-                            </p>
-                            <p class="footer__bottom--info-text">
-                                Privacy Policy
-                            </p>
+                            <a href="#">
+                                <p class="footer__bottom--info-text">
+                                    About us
+                                </p>
+                            </a>
+                            <a href="#">
+                                <p class="footer__bottom--info-text">
+                                    Contact us
+                                </p>
+                            </a>
+                            <a href="#">
+                                <p class="footer__bottom--info-text">
+                                    Terms of user
+                                </p>
+                            </a>
+                            <a href="#">
+                                <p class="footer__bottom--info-text">
+                                    Privacy Policy
+                                </p>
+                            </a>
                         </div>
                     </div>
                     <div class="col-fourth">
@@ -427,18 +469,26 @@
                             <p class="footer__bottom--header-text">
                                 QUICK LINK
                             </p>
-                            <p class="footer__bottom--info-text">
-                                New user
-                            </p>
-                            <p class="footer__bottom--info-text">
-                                Help center
-                            </p>
-                            <p class="footer__bottom--info-text">
-                                Report spam
-                            </p>
-                            <p class="footer__bottom--info-text">
-                                FAQs
-                            </p>
+                            <a href="#">
+                                <p class="footer__bottom--info-text">
+                                    New user
+                                </p>
+                            </a>
+                            <a href="#">
+                                <p class="footer__bottom--info-text">
+                                    Help center
+                                </p>
+                            </a>
+                            <a href="#">
+                                <p class="footer__bottom--info-text">
+                                    Report spam
+                                </p>
+                            </a>
+                            <a href="#">
+                                <p class="footer__bottom--info-text">
+                                    FAQs
+                                </p>
+                            </a>
                         </div>
                     </div>
                 </div>
