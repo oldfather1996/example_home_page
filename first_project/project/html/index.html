@@ -9,6 +9,7 @@
     <link rel="stylesheet" href="../asset/css/style.css">
     <link rel="stylesheet" href="../asset/css/slick.css">
     <link rel="stylesheet" href="../asset/css/slick-theme.css">
+    <link rel="stylesheet" href="../asset/css/responsive.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
         integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
@@ -25,20 +26,22 @@
                     <div class="container__logo">
                         <img src="../asset/image/header/logo.png" alt="">
                     </div>
-                    <div class="container__nav-left">
-                        <ul class="container__nav--menu-left">
-                            <li><a href="#">Home</a></li>
-                            <li><a href="#">Pages</a></li>
-                            <li><a href="#">Classes</a></li>
-                        </ul>
+                    <div class="container__nav">
+                        <div class="container__nav-left">
+                            <ul class="container__nav--menu-left">
+                                <li><a href="#">Home</a></li>
+                                <li><a href="#">Pages</a></li>
+                                <li><a href="#">Classes</a></li>
+                            </ul>
 
-                    </div>
-                    <div class="container__nav-right">
-                        <ul class="container__nav--menu-right">
-                            <li><a href="#">Portfolio</a></li>
-                            <li><a href="#">Blog</a></li>
-                            <li><a href="#">Contacts</a></li>
-                        </ul>
+                        </div>
+                        <div class="container__nav-right">
+                            <ul class="container__nav--menu-right">
+                                <li><a href="#">Portfolio</a></li>
+                                <li><a href="#">Blog</a></li>
+                                <li><a href="#">Contacts</a></li>
+                            </ul>
+                        </div>
                     </div>
                     <div class="container__icon">
                         <div class="container__icon--inside">
@@ -49,7 +52,30 @@
                             <a href=""> <i class="fas fa-user"></i></a>
                         </div>
                     </div>
-                </div> 
+
+                </div>
+                <div class="container__mobile--nav row">
+                    <ul class="mobile--nav">
+                        <li><a href="#">Home </a>
+                            <i id="mobile-menu" class="fas fa-bars"></i>
+                        </li>
+                        <li><a href="#">Pages</a></li>
+                        <li><a href="#">Classes</a></li>
+                        <li><a href="#">Portfolio</a></li>
+                        <li><a href="#">Blog</a></li>
+                        <li><a href="#">Contacts</a></li>
+                    </ul>
+                    <div class="container__icon">
+                        <div class="container__icon--inside">
+                            <a href=""> <i class="fas fa-search"></i></a>
+                            <p></p>
+                            <a href=""> <i class="fas fa-shopping-basket"></i></a>
+                            <p></p>
+                            <a href=""> <i class="fas fa-user"></i></a>
+                        </div>
+                    </div>
+                </div>
+
             </div>
         </div>
         <!-- End : Begin -->
@@ -58,24 +84,27 @@
         <div class="slider">
             <div class="slider--banner">
                 <img src="../asset/image/slider/img.png" alt="">
-            </div>
-            <div class="container">
-                <div class="container__inner">
-                    <div class="container__inner--title">
-                        <div class="container__title_header">
-                            <h1 class="fs-60">Dumbbells Shop</h1>
+                <div class="container slider__content">
+                    <div class="row">
+                        <div class="container__inner">
+                            <div class="container__inner--title">
+                                <div class="container__title_header">
+                                    <h1 class="fs-60">Dumbbells Shop</h1>
+                                </div>
+                                <div class="container__title_medium">
+                                    <h2 class="fs-40">Best body fitness</h2>
+                                </div>
+                                <div class="container__title_desc">
+                                    <p class="fs-14">Lorem Ipsum is simply dummy text of the printing and typesetting
+                                        industry.
+                                        Lorem Ipsum has been the industry's standard
+                                        dummy text ever since the 1500s, when an unknown printer</p>
+                                </div>
+                            </div>
+                            <div class="slider__button">
+                                <a href="#">SHOP NOW</a>
+                            </div>
                         </div>
-                        <div class="container__title_medium">
-                            <h2 class="fs-40">Best body fitness</h2>
-                        </div>
-                        <div class="container__title_desc">
-                            <p class="fs-14">Lorem Ipsum is simply dummy text of the printing and typesetting industry.
-                                Lorem Ipsum has been the industry's standard
-                                dummy text ever since the 1500s, when an unknown printer</p>
-                        </div>
-                    </div>
-                    <div class="slider__button">
-                        <a href="#">SHOP NOW</a>
                     </div>
                 </div>
             </div>
@@ -86,26 +115,24 @@
 
             <!-- Begin : Banner -->
             <div class="container__banner">
-                <div class="container__banner--inside row-3">
+                <div class="container__banner--inside row-3 mobile__row-2">
                     <img src="../asset/image/category/dumbbeils/5cb04e457e213.png" class="container__banner--image"
                         alt="">
                 </div>
-                <div class="container__banner--inside row-3">
-                    <div class="inside">
-                        <img src="../asset/image/category/stregth/icon.png" class="img_icon__strength">
-                        <p class="text-heading__strength">
-                            STRENGTH
-                        </p>
-                        <p class="text-desc">
-                            Lorem Ipsum is simply dummy text of the printing and typesetting industry.
-                        </p>
-                    </div>
+                <div class="container__banner--inside row-3 mobile__row-2">
+                    <img src="../asset/image/category/stregth/icon.png" class="img_icon__strength">
+                    <p class="text-heading__strength">
+                        STRENGTH
+                    </p>
+                    <p class="text-desc">
+                        Lorem Ipsum is simply dummy text of the printing and typesetting industry.
+                    </p>
                 </div>
-                <div class="container__banner--inside row-3">
+                <div class="container__banner--inside row-3 mobile__row-2">
                     <img src="../asset/image/category/power-rack/5cff1632c51da.png" class="container__banner--image"
                         alt="">
                 </div>
-                <div class="container__banner--inside row-3">
+                <div class="container__banner--inside row-3 mobile__row-2">
                     <img src="../asset/image/category/dumbbeils/icon.png" class="img_icon__dummble">
                     <p class="text-heading__dumbbells">
                         DUMBBELLS
@@ -114,11 +141,11 @@
                         Lorem Ipsum is simply dummy text of the printing and typesetting industry.
                     </p>
                 </div>
-                <div class="container__banner--inside row-3">
+                <div class="container__banner--inside row-3 mobile__row-2">
                     <img src="../asset/image/category/stregth/5cee3d334ad30.png" class="container__banner--image"
                         alt="">
                 </div>
-                <div class="container__banner--inside row-3">
+                <div class="container__banner--inside row-3 mobile__row-2">
                     <img src="../asset/image/category/power-rack/icon.png" class="img_icon__power-rack">
                     <p class="text-heading__power-rack">
                         POWER RACK & CAGES
@@ -143,7 +170,7 @@
                     <p>MOST REVIEWS</p>
                 </div>
                 <div class="product__items row">
-                    <div class="col-fourth">
+                    <div class="col-fourth mobile__row-2">
                         <div class="product__item--info">
                             <div class="item--img">
                                 <img src="../asset/image/product/product_1.png">
@@ -160,7 +187,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="col-fourth">
+                    <div class="col-fourth mobile__row-2">
                         <div class="product__item--info">
                             <div class="item--img">
                                 <img src="../asset/image/product/product_2.png">
@@ -177,7 +204,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="col-fourth">
+                    <div class="col-fourth mobile__row-2">
                         <div class="product__item--info">
                             <div class="item--img">
                                 <img src="../asset/image/product/product_3.png">
@@ -194,7 +221,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="col-fourth">
+                    <div class="col-fourth mobile__row-2">
                         <div class="product__item--info">
                             <div class="item--img">
                                 <img src="../asset/image/product/product_4.png">
@@ -211,7 +238,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="col-fourth">
+                    <div class="col-fourth mobile__row-2">
                         <div class="product__item--info">
                             <div class="item--img">
                                 <img src="../asset/image/product/product_5.png">
@@ -228,7 +255,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="col-fourth">
+                    <div class="col-fourth mobile__row-2">
 
                         <div class="product__item--info">
                             <div class="item--img">
@@ -246,7 +273,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="col-fourth">
+                    <div class="col-fourth mobile__row-2">
 
                         <div class="product__item--info">
                             <div class="item--img">
@@ -264,7 +291,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="col-fourth">
+                    <div class="col-fourth mobile__row-2">
                         <div class="product__item--info">
                             <div class="item--img">
                                 <img src="../asset/image/product/product_8.png">
@@ -384,7 +411,7 @@
             <div class="container">
                 <div class="row">
                     <div class="footer__bottom"></div>
-                    <div class="col-fourth">
+                    <div class="col-fourth mobile__row-2">
                         <div class="col-inner">
                             <a href="#">
                                 <p class="footer__bottom--header-text">
@@ -412,7 +439,7 @@
                                 </a>
                         </div>
                     </div>
-                    <div class="col-fourth">
+                    <div class="col-fourth mobile__row-2">
                         <div class="col-inner">
                             <p class="footer__bottom--header-text">
                                 MY ACCOUNT
@@ -439,7 +466,7 @@
                             </a>
                         </div>
                     </div>
-                    <div class="col-fourth">
+                    <div class="col-fourth mobile__row-2">
                         <div class="col-inner">
                             <p class="footer__bottom--header-text">
                                 INFORMATION
@@ -466,7 +493,7 @@
                             </a>
                         </div>
                     </div>
-                    <div class="col-fourth">
+                    <div class="col-fourth mobile__row-2">
                         <div class="col-inner">
                             <p class="footer__bottom--header-text">
                                 QUICK LINK
@@ -501,10 +528,24 @@
         </div>
     </div>
     <script>
+        // slider_about
         $('.slider_about').slick({
             dots: true,
             arrows: false
-        })
+        });
+
+        // menu-mobile
+        var header = document.getElementById('header');
+        var mobileMenu = document.getElementById('mobile-menu');
+        var headerHeight = header.clientHeight;
+        mobileMenu.onclick = function () {
+            var isClose = header.clientHeight === headerHeight;
+            if (isClose) {
+                header.style.height = 'auto';
+            } else {
+                header.style.height = null;
+            }
+        }
     </script>
 </body>
 
