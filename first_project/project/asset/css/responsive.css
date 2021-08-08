@@ -108,7 +108,7 @@
 }
 /* mobile ( plus )  */
 
-@media (min-width: 400px) and (max-width: 768px) {
+@media (min-width: 400px) and (max-width: 767px) {
   /* header */
   #header {
     height: 46px;
@@ -233,6 +233,12 @@
   }
   .container__icon {
     display: none;
+  }
+  .footer__header--outside {
+    margin-top: 8%;
+  }
+  .footer__header--outside {
+    margin-left: unset;
   }
 }
 
