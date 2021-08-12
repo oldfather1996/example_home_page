@@ -88,7 +88,7 @@
     position: absolute;
     z-index: 1;
     bottom: unset;
-    transform: translate(1%, -150%);
+    transform: translate(1%, -260%);
   }
 
   .container__inner--title > h1 {
