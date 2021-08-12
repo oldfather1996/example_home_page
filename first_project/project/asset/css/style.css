@@ -104,7 +104,7 @@ body {
 
 /* nav */
 
-.container__nav{
+.container__nav {
   width: 60%;
   display: flex;
 }
@@ -140,7 +140,7 @@ body {
   margin: 0;
   text-decoration: none;
   font-size: 16px;
-  font-weight: 600px;
+  font-weight: 600;
   color: rgb(174, 173, 172);
 }
 
@@ -180,7 +180,7 @@ body {
   margin: 0;
   text-decoration: none;
   font-size: 16px;
-  font-weight: 600px;
+  font-weight: 600;
   color: rgb(174, 173, 172);
 }
 
@@ -234,6 +234,11 @@ body {
 .slider--banner > img {
   max-width: 100%;
 }
+.slider__banner--img {
+  background: url(../image/slider/img.png) top center/cover no-repeat;
+  max-width: 100%;
+  height: 956px;
+}
 
 .slider__image > img {
   max-width: 100%;
@@ -244,7 +249,7 @@ body {
 /*  inside slider */
 
 .container__inner {
-  padding: 0 15px;  
+  padding: 0 15px;
   width: 100%;
   position: relative;
 }
@@ -256,7 +261,7 @@ body {
   bottom: 386px;
 }
 
-.container__title_header > h1 {
+.container__inner--title > h1 {
   font-size: 60px;
   font-weight: 700;
   font-family: "Poppins-Bold";
@@ -264,7 +269,7 @@ body {
   bottom: 187px;
   left: -2px;
 }
-.container__title_medium > h2 {
+.container__inner--title > h2 {
   font-size: 40px;
   font-weight: 700;
   font-family: "Poppins-Bold";
@@ -273,7 +278,7 @@ body {
   left: -3px;
 }
 
-.container__title_desc > p {
+.container__inner--title > p {
   max-width: 532px;
   height: 60px;
   font-size: 14px;
@@ -293,7 +298,7 @@ body {
   border: solid 1px #fff;
   position: absolute;
   font-weight: 400;
-  bottom: 324px;
+  bottom: -54.2%;
 }
 
 .slider__button a:hover {
@@ -321,7 +326,6 @@ body {
 .container__banner--inside {
   height: 250px;
 }
-
 
 .container__banner--image {
   width: 100%;
