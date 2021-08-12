@@ -63,24 +63,36 @@
   .slider__banner--img {
     background: url(../image/slider/img.png) center right 28% / cover no-repeat;
     max-width: 100%;
-    height: 599px;
+    height: 600px;
   }
 
   /* banner */
   .container__banner--inside {
-    height: 250px;
+    height: unset;
     border: unset;
     box-sizing: border-box;
   }
 
-  .mobile__row-2 {
-    width: calc(100% / 2);
-  }
   .mobile__row {
     width: 100%;
   }
+  .container__banner--inside {
+    height: unset;
+    display: flex;
+  }
+
+  .banner__inside--content {
+    margin: auto;
+  }
+
+  .banner__inside--content > img {
+    margin: 12px;
+  }
+
   .text-desc {
     padding: 0;
+    max-width: unset;
+    height: unset;
   }
 
   .container__inner--title {
@@ -88,7 +100,7 @@
     position: absolute;
     z-index: 1;
     bottom: unset;
-    transform: translate(0, -260%);
+    transform: translate(0%, -260%);
   }
 
   .container__inner--title > h1 {
@@ -258,22 +270,37 @@
   .slider__banner--img {
     background: url(../image/slider/img.png) center right 28% / cover no-repeat;
     max-width: 100%;
-    height: 599px;
+    height: 600px;
   }
 
   /* banner */
   .container__banner--inside {
-    height: 250px;
+    height: unset;
     border: 0.1px solid;
     box-sizing: border-box;
   }
 
- .mobile__row{
-   width: 100%;
- }
+  .mobile__row {
+    width: calc(100%);
+  }
+
+  .container__banner--inside {
+    height: unset;
+    display: flex;
+  }
+
+  .banner__inside--content {
+    margin: auto;
+  }
+
+  .banner__inside--content > img {
+    margin: 12px;
+  }
 
   .text-desc {
     padding: 0;
+    max-width: unset;
+    height: unset;
   }
 
   .container__inner--title {
@@ -281,7 +308,7 @@
     position: absolute;
     z-index: 1;
     bottom: unset;
-    transform: translate(0, -280%);
+    transform: translate(0%, -280%);
   }
 
   .container__inner--title > h1 {
@@ -446,8 +473,26 @@
     bottom: unset;
   }
 
+  .container__banner--inside {
+    height: unset;
+    display: flex;
+  }
+
+  .banner__inside--content {
+    margin: auto;
+  }
+
+  .banner__inside--content > img {
+    margin: 0;
+  }
+
   .text-desc {
+    height: unset;
     padding: 0;
+        overflow: hidden;
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 1;
   }
 
   .slider__banner--img {

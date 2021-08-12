@@ -325,11 +325,16 @@ body {
 
 .container__banner--inside {
   height: 250px;
+  display: flex;
 }
 
 .container__banner--image {
   width: 100%;
-  height: 100%;
+}
+
+.banner__inside--content{
+  width: 100%;
+  height: auto;
 }
 
 .img_icon__strength {
