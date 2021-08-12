@@ -88,7 +88,7 @@
     position: absolute;
     z-index: 1;
     bottom: unset;
-    transform: translate(1%, -260%);
+    transform: translate(0, -260%);
   }
 
   .container__inner--title > h1 {
@@ -268,9 +268,9 @@
     box-sizing: border-box;
   }
 
-  .mobile__row-2 {
-    width: calc(100% / 2);
-  }
+ .mobile__row{
+   width: 100%;
+ }
 
   .text-desc {
     padding: 0;
@@ -281,7 +281,7 @@
     position: absolute;
     z-index: 1;
     bottom: unset;
-    transform: translate(1%, -280%);
+    transform: translate(0, -280%);
   }
 
   .container__inner--title > h1 {
